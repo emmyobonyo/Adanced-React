@@ -4,8 +4,8 @@ import { ThemeContextConsumer } from "./themeContext"
 function Header() {
     return (
         <ThemeContextConsumer>
-            { theme => (
-                <header className={`${theme}-theme`}>
+            { context => (
+                <header className={`${context.theme}-theme`}>
                     <h2>Light Theme</h2>
                 </header>
             ) }

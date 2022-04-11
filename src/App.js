@@ -8,11 +8,6 @@ function App() {
     return (
         <div>
             <Header />
-            <ThemeContextConsumer>
-                {theme => (
-                    <Button theme={theme} />
-                )}
-            </ThemeContextConsumer>
             <Button />
         </div>
     )
